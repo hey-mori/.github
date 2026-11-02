@@ -2,7 +2,7 @@
 
 The organization's shared policy repository. It holds what every Mori
 repository has in common: how to contribute, how commits and pull requests are
-written, how to report a vulnerability, and the public organization profile.
+written, and how to report a vulnerability.
 
 Product code, release tooling, CI and operational detail live in the
 repositories that own them, not here.
@@ -17,7 +17,6 @@ repositories that own them, not here.
 | `.github/PULL_REQUEST_TEMPLATE.md` | pull request template |
 | `.github/VULNERABILITY_REPORT.yml` | private vulnerability report form |
 | `.github/ISSUE_TEMPLATE/` | issue forms, and links to the security policy and support |
-| `profile/README.md` | the public profile at [github.com/hey-mori](https://github.com/hey-mori) |
 | `docs/commit-format.md` | nothing by itself; linked from `CONTRIBUTING.md` |
 
 ## How GitHub applies these files
