@@ -1,44 +1,73 @@
 # hey-mori/.github
 
-Organization-wide defaults for the Mori repositories. GitHub reads this
-repository only because it is public and named `.github`; nothing here is
-meant to be cloned or built.
+The organization's shared policy repository. It holds what every Mori
+repository has in common: how to contribute, how commits and pull requests are
+written, how to report a vulnerability, and the public organization profile.
 
-## What lives here
+Product code, release tooling, CI and operational detail live in the
+repositories that own them, not here.
 
-| Path | Used by GitHub as | Applies to |
-| --- | --- | --- |
-| `CONTRIBUTING.md` | contributing guidelines | repositories with no `CONTRIBUTING.md` of their own |
-| `SECURITY.md` | security policy | repositories with no `SECURITY.md` of their own |
-| `.github/PULL_REQUEST_TEMPLATE.md` | pull request template | repositories with no pull request template of their own |
-| `profile/README.md` | organization profile | the public page at github.com/hey-mori |
-| `docs/commit-format.md` | nothing (a linked reference) | read through `CONTRIBUTING.md` |
+## Contents
 
-## How the defaults behave
+| Path | GitHub uses it as |
+| --- | --- |
+| `CONTRIBUTING.md` | contributing guidelines |
+| `SECURITY.md` | security policy |
+| `SUPPORT.md` | support resources |
+| `.github/PULL_REQUEST_TEMPLATE.md` | pull request template |
+| `.github/VULNERABILITY_REPORT.yml` | private vulnerability report form |
+| `.github/ISSUE_TEMPLATE/` | issue forms, and links to the security policy and support |
+| `profile/README.md` | the public profile at [github.com/hey-mori](https://github.com/hey-mori) |
+| `docs/commit-format.md` | nothing by itself; linked from `CONTRIBUTING.md` |
 
-- A repository's own file always wins, and wins entirely. The two are never
-  merged, so a repository that adds its own `SECURITY.md` stops seeing this one.
-- Defaults are not copied into a repository. They do not appear in a clone, and
-  a change here takes effect everywhere at once.
-- Issue templates are deliberately absent. GitHub treats the whole
-  `ISSUE_TEMPLATE` directory as one file, so a central set would reach only
-  repositories that define none, and each Mori repository keeps its own.
-- Which repository uses which default changes over time. Check the repository,
-  not a list written here.
+## How GitHub applies these files
 
-## Rules for editing
+- GitHub reads defaults only from a **public** repository named `.github`.
+- A default is used by **every** repository in the organization, public or
+  private, that does not have its own file of that type.
+- A repository's own file wins, entirely. GitHub looks in the repository's
+  `.github/` folder, then its root, then `docs/`, and only falls back to this
+  repository if none of them has the file. Nothing is merged.
+- Defaults are not copied into other repositories. They do not appear in their
+  clones or history, and a change here applies everywhere at once.
+- The report form applies only where private vulnerability reporting is turned
+  on, which GitHub allows on public repositories only.
+- Licenses cannot be defaults. Each repository carries its own.
 
-- **Everything here is public.** Do not add private repository names, internal
-  design, hostnames, runner or deployment details, release plans, local paths,
-  or anything from a private repository's issues.
-- **Keep only what every Mori repository shares.** A verification command, a
-  merge script or a toolchain version belongs to the repository that owns it.
-- **Use absolute links in the pull request template.** GitHub pastes the
-  template into another repository, where a relative link would resolve
-  against that repository. Other files here may link relatively.
-- Change one default per pull request, so its reach can be checked on its own.
+To see what a repository actually uses, open its **Insights → Community** page
+(public repositories) or check whether it has its own copy of the file.
 
-## Relationship to swarea/.github
+## What is not here, on purpose
+
+- **Product-specific issue forms.** GitHub treats a repository's whole
+  `ISSUE_TEMPLATE` folder as one unit, so the forms here reach only
+  repositories with none of their own. They are a small fallback: a bug, an
+  idea, and a link away from issues for security problems. A repository that
+  needs more defines its own set.
+- **A code of conduct.** It needs a way to report conduct privately, and there
+  is none yet. Add one with that channel when the first repository accepts
+  outside contributions.
+- **A members-only profile.** That lives in a private `.github-private`
+  repository, if one is ever needed.
+
+## Maintaining this repository
+
+- **Everything here is public.** Leave out private repository names, internal
+  design, hostnames, runner and deployment details, release plans, local
+  paths, and anything taken from a private repository's issues or pull
+  requests.
+- **Keep only what every repository shares.** A verification command, a merge
+  script or a toolchain version belongs to the repository that runs it.
+- **Change it like code.** Use a branch and a pull request, merge with a merge
+  commit, and keep each default in its own commit so its reach can be
+  reviewed on its own.
+- **Use absolute links in the pull request template and the report form.**
+  GitHub shows them inside other repositories, where a relative link would
+  resolve against that repository. Other files may link relatively.
+- **Keep the policy true.** When a repository adds its own policy, or a
+  product becomes public, update what this repository says about it.
+
+## History
 
 The Mori repositories moved here from the `swarea` organization. The defaults
 in `swarea/.github` no longer apply to them. Documents there that Mori still

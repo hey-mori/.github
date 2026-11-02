@@ -1,0 +1,21 @@
+name: Idea or request
+description: A change you would like, and the problem behind it.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem first. A request that changes what Mori reads, keeps or sends is discussed before anyone builds it.
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What you are trying to do, and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+      description: Optional. A change you have in mind, and anything you considered instead.
+    validations:
+      required: false
