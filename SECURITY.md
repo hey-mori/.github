@@ -1,45 +1,109 @@
 # Security policy
 
-This is the default policy for `hey-mori` repositories that have no
-`SECURITY.md` of their own. Mori is local-first software that reads what is on
-the user's machine, so a report about data leaving the device, or being kept
-longer than promised, is in scope even when no code is exploited.
+This policy applies to every repository in the `hey-mori` organization that
+does not have a `SECURITY.md` of its own. A repository with its own policy
+follows that one.
 
-## Report privately
+## Reporting a vulnerability
 
-**Do not open a public issue, discussion or pull request for a vulnerability.**
+**Do not report a vulnerability in a public issue, discussion, pull request or
+commit.** Anything posted there is public at once.
 
-1. Use [Report a vulnerability](https://github.com/hey-mori/.github/security/advisories/new)
-   on this repository. It is private end to end, and it works even if you
-   cannot see the repository the problem is in.
-2. If that form is unavailable, open an
-   [issue here](https://github.com/hey-mori/.github/issues/new) that says only
-   that you have found something and asks for a private channel. Leave every
-   technical detail out of it.
+Report it privately with
+**[Report a vulnerability](https://github.com/hey-mori/.github/security/advisories/new)**
+in this repository.
 
-A useful report names the product and version or commit, the steps to
-reproduce, and what you saw against what you expected. A proof of concept helps
-and is not required.
+- Use this form even when the affected repository is private and you cannot
+  see it. Name the product and the version in the report.
+- You need a GitHub account and must be signed in.
+- The report is not public. It reaches the Mori maintainers, and stays private
+  until an advisory is published, if one is.
 
-## What to expect
+### If the form is not available
 
-- An acknowledgement within a week. No response time is guaranteed.
-- You will be told whether a fix is planned, and roughly when, before anything
-  is published.
-- There is no bug bounty.
+Open an [issue in this repository](https://github.com/hey-mori/.github/issues/new)
+titled **Security contact request**, with this as the only text:
+
+> I would like to report a security issue privately. How can I reach you?
+
+Do not name the product, component, version or kind of problem. A maintainer
+will reply with a private way to send the details.
+
+### Why reports come here for now
+
+Mori's product repositories are private today, and GitHub's private
+vulnerability reporting works only on public repositories. This public
+repository is therefore the one place where anyone can report privately.
+
+When a product repository becomes public, it will turn on private reporting
+in that repository and say so in its own `SECURITY.md`. This policy then
+remains the default for every repository that has not.
+
+## What to include
+
+- The product, its version or commit, and the platform.
+- Steps to reproduce, and a proof of concept if you have one.
+- The impact: what an attacker can do, or what data leaves the device, is kept
+  longer than promised, or is read without permission.
+- Whether you have told anyone else, and any disclosure date you have in mind.
+
+## What happens next
+
+Mori is maintained by a small team. These are targets, not guarantees.
+
+| Step | Target |
+| --- | --- |
+| Acknowledge the report | within 7 days |
+| Assess it: accepted, more information needed, or not a vulnerability | within 30 days |
+| Fix an accepted report | a plan and a date, shared with you, based on severity |
+
+You will hear from us at each step, including when a target slips.
+
+## Disclosure
+
+We follow coordinated disclosure. Please keep the details private until a fix
+is released, or until we agree on a date together.
+
+We ask for up to 90 days from acknowledgement to release a fix. If we need
+longer, we will explain why and agree a new date with you before it passes.
+
+Once a fix is released, it is disclosed through a GitHub security advisory if
+the affected repository is public, or otherwise in the notes of the first
+release that contains it.
+
+## Supported versions
+
+Mori has no public release yet. Reports are assessed against the current
+development version. This section will list supported versions once releases
+exist.
 
 ## Scope
 
-In scope: code in the Mori repositories, the artifacts they publish, and the
-builds that produce them.
+In scope:
 
-Out of scope: third-party services and platforms Mori runs on or integrates
-with (report those to their owners), social engineering, and anything that
-needs access to a maintainer's account.
+- Code in `hey-mori` repositories, the artifacts they publish, and the builds
+  and release process that produce them.
+- Privacy failures. Mori is local-first software, so data leaving the device,
+  being kept longer than promised, or being read outside what the user
+  connected is in scope even when nothing is exploited in the usual sense.
 
-## Please do not
+Out of scope:
 
-- Access, change or delete data that is not yours.
-- Test against someone else's installation when a local one would do.
-- Publish details before a fix is released, or before a decision not to fix has
-  been explained to you.
+- Third-party services and platforms that Mori runs on or integrates with.
+  Report those to their owners.
+- Attacks that require an attacker who already controls the user's account or
+  device.
+- Social engineering, and anything that requires access to a maintainer's
+  account.
+
+## Recognition
+
+There is no bug bounty and no payment for reports. With your permission, you
+will be credited in the advisory or the release notes.
+
+## Testing in good faith
+
+- Test only against your own installation and your own data.
+- If you reach data that is not yours, stop, and include that in your report.
+- Do not degrade a service or another person's use of Mori.
+- Do not publish details before a fix is released or the agreed date passes.
