@@ -13,8 +13,10 @@ repositories that own them, not here.
 | --- | --- |
 | `CONTRIBUTING.md` | contributing guidelines |
 | `SECURITY.md` | security policy |
+| `SUPPORT.md` | support resources |
 | `.github/PULL_REQUEST_TEMPLATE.md` | pull request template |
 | `.github/VULNERABILITY_REPORT.yml` | private vulnerability report form |
+| `.github/ISSUE_TEMPLATE/` | issue forms, and links to the security policy and support |
 | `profile/README.md` | the public profile at [github.com/hey-mori](https://github.com/hey-mori) |
 | `docs/commit-format.md` | nothing by itself; linked from `CONTRIBUTING.md` |
 
@@ -37,11 +39,14 @@ To see what a repository actually uses, open its **Insights → Community** page
 
 ## What is not here, on purpose
 
-- **Issue templates.** GitHub treats a repository's whole `ISSUE_TEMPLATE`
-  folder as one unit, so a central set reaches only repositories with none of
-  their own. Each repository keeps its own templates.
-- **A code of conduct and a support guide.** Add them when the first
-  repository opens to outside contributors.
+- **Product-specific issue forms.** GitHub treats a repository's whole
+  `ISSUE_TEMPLATE` folder as one unit, so the forms here reach only
+  repositories with none of their own. They are a small fallback: a bug, an
+  idea, and a link away from issues for security problems. A repository that
+  needs more defines its own set.
+- **A code of conduct.** It needs a way to report conduct privately, and there
+  is none yet. Add one with that channel when the first repository accepts
+  outside contributions.
 - **A members-only profile.** That lives in a private `.github-private`
   repository, if one is ever needed.
 
