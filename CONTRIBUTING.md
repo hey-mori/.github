@@ -2,8 +2,8 @@
 
 This guide applies to every repository in the `hey-mori` organization that does
 not have a `CONTRIBUTING.md` of its own. It holds what all Mori repositories
-share. Most of them are private, so contributions come from people who have
-been given access.
+share. Contributions to a private repository come from people who have been
+given access to it.
 
 Found a vulnerability? Do not open an issue. Follow
 [SECURITY.md](SECURITY.md).
