@@ -46,6 +46,15 @@ Merge commits (`Merge pull request #N from ...`, `Merge branch '...' into ...`)
 and reverts made by `git revert` keep the shape git or GitHub gives them. The
 validators accept or skip them.
 
+## Sign-off
+
+The one trailer allowed is a DCO sign-off: a final block of
+`Signed-off-by: Name <email>` lines after one blank line, which is where
+`git commit -s` puts it. Contributors from outside the organization need it on
+every commit; see "Licence and sign-off" in
+[CONTRIBUTING.md](../CONTRIBUTING.md). A sign-off anywhere else in the message
+is not a bullet and is rejected.
+
 ## What is checked, and what is a convention
 
 Where a repository ships a validator, it runs as the `commit-msg` hook
