@@ -31,13 +31,15 @@ will reply with a private way to send the details.
 
 ### Why reports come here for now
 
-Mori's product repositories are private today, and GitHub's private
-vulnerability reporting works only on public repositories. This public
-repository is therefore the one place where anyone can report privately.
+GitHub's private vulnerability reporting works only on public repositories.
+Mori Lens is public and takes reports under its own *Security* tab, as its
+`SECURITY.md` says. The other product repositories are private today, so this
+public repository is the one place where anyone can report privately about
+them.
 
-When a product repository becomes public, it will turn on private reporting
-in that repository and say so in its own `SECURITY.md`. This policy then
-remains the default for every repository that has not.
+When another product repository becomes public, it will turn on private
+reporting in that repository and say so in its own `SECURITY.md`. This policy
+then remains the default for every repository that has not.
 
 ## What to include
 
