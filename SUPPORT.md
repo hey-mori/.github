@@ -1,6 +1,6 @@
 # Support
 
-Mori is in early development and maintained by a small team. There is no
+Mori is in early development and maintained by one person. There is no
 support service, and no response time is promised.
 
 - **A bug, or something that does not work as documented:** open an issue in
