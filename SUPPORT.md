@@ -1,7 +1,6 @@
 # Support
 
-Mori is in early development and maintained by one person. There is no
-support service, and no response time is promised.
+Support for Mori happens in the open, on GitHub.
 
 - **A bug, or something that does not work as documented:** open an issue in
   the repository it belongs to, with the steps that show it.
