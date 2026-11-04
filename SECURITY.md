@@ -9,12 +9,19 @@ follows that one.
 **Do not report a vulnerability in a public issue, discussion, pull request or
 commit.** Anything posted there is public at once.
 
-Report it privately with
-**[Report a vulnerability](https://github.com/hey-mori/.github/security/advisories/new)**
-in this repository.
+Report it privately with the affected repository's own form, under its
+*Security* tab:
 
-- Use this form even when the affected repository is private and you cannot
-  see it. Name the product and the version in the report.
+- Mori: [Report a vulnerability](https://github.com/hey-mori/mori/security/advisories/new)
+- Mori Lens: [Report a vulnerability](https://github.com/hey-mori/mori-lens/security/advisories/new)
+- Mori Browser Extension: [Report a vulnerability](https://github.com/hey-mori/mori-browser-extension/security/advisories/new)
+- Mori Web: [Report a vulnerability](https://github.com/hey-mori/mori-web/security/advisories/new)
+
+If you are not sure which repository is affected, or the problem spans more
+than one, use
+**[this repository's form](https://github.com/hey-mori/.github/security/advisories/new)**
+and name the product and the version.
+
 - You need a GitHub account and must be signed in.
 - The report is not public. It reaches the Mori maintainers, and stays private
   until an advisory is published, if one is.
@@ -28,18 +35,6 @@ titled **Security contact request**, with this as the only text:
 
 Do not name the product, component, version or kind of problem. A maintainer
 will reply with a private way to send the details.
-
-### Why reports come here for now
-
-GitHub's private vulnerability reporting works only on public repositories.
-Mori Lens is public and takes reports under its own *Security* tab, as its
-`SECURITY.md` says. The other product repositories are private today, so this
-public repository is the one place where anyone can report privately about
-them.
-
-When another product repository becomes public, it will turn on private
-reporting in that repository and say so in its own `SECURITY.md`. This policy
-then remains the default for every repository that has not.
 
 ## What to include
 
