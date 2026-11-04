@@ -46,7 +46,7 @@ will reply with a private way to send the details.
 
 ## What happens next
 
-Mori is maintained by a small team. These are targets, not guarantees.
+Mori is maintained by one person. These are targets, not guarantees.
 
 | Step | Target |
 | --- | --- |
