@@ -46,7 +46,7 @@ will reply with a private way to send the details.
 
 ## What happens next
 
-Mori is maintained by one person. These are targets, not guarantees.
+These are targets, not guarantees.
 
 | Step | Target |
 | --- | --- |
@@ -70,9 +70,8 @@ release that contains it.
 
 ## Supported versions
 
-Mori has no public release yet. Reports are assessed against the current
-development version. This section will list supported versions once releases
-exist.
+Security fixes are made on `main` and ship in the next release. Report
+against the latest release or the current `main`.
 
 ## Scope
 
