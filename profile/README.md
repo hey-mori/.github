@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="mori-mark.svg" alt="Mori" width="76" height="76">
   <h3>Local-first tools for remembering your work<br>and understanding what you read</h3>
