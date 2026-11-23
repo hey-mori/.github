@@ -1,6 +1,7 @@
+
 <div align="center">
   <img src="mori-mark.svg" alt="Mori" width="76" height="76">
-  <h3>Local-first tools for remembering your work<br>and reading across languages</h3>
+  <h3>Local-first tools for remembering your work<br>and understanding what you read</h3>
 </div>
 
 <br>
@@ -9,17 +10,17 @@
   <tr>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/hey-mori/mori">Mori</a></h4>
-      Turns AI agent sessions, Git history, notes and links into one record of what you did, learned and decided.
+      Turns scattered information and experiences into connected records of what you did, learned, and decided.
     </td>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/hey-mori/mori-lens">Mori Lens</a></h4>
-      Rest the pointer on text in any app and read it in your language, explained by a model on your own machine.
+      Helps you understand or translate text as you read, with unobtrusive explanations powered by a local model.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/hey-mori/mori-browser-extension">Mori Browser Extension</a></h4>
-      Adds the pages you work in to Mori's record, only when you turn it on.
+      Connects browsing activity to Mori's local records only when enabled, without reading page content.
     </td>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/hey-mori/mori-web">Mori Web</a></h4>
